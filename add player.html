@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Basketball</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="design/index.css">
+
+  <nav>
+ <ul>
+ <li><a href="home.html">Home</a></li>
+ <li><a href="add%20player.html">Add Player</a></li>
+ <li><a href="players.html">Players</a></li>
+ </ul>
+ </nav>
+
+</head>
+
+<body>
+
+	<main>
+    <section>
+
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <form action="http://kittey.rockz:1111/api/V1/addPlayer" method="get">
+      <table border="0" cellspacing="0" cellpadding="2">
+        <tbody>
+          <tr>
+            </td>
+          </tr>
+          <tr>
+            <td>Anrede:</td>
+            <td>
+              <input checked="checked" name="Anrede" type="radio" value="Herr" /> Herr
+              <input name="Anrede" type="radio" value="Frau" /> Frau
+            </td>
+          </tr>
+          <tr>
+            <td>Vorname:</td>
+            <td>
+              <input maxlength="50" name="Vorname" size="45" type="text" required="required" />
+            </td>
+          </tr>
+          <tr>
+            <td>Nachname:</td>
+            <td>
+              <input name="Nachname" size="45" type="text"  required="required"  />
+            </td>
+          </tr>
+          <tr>
+            <td>Verein:</td>
+            <td>
+              <input name="Verein" size="45" type="text"  required="required"  />
+            </td>
+          </tr>
+          <tr>
+            <td>Headcoach:</td>
+            <td>
+              <input name="Headcoach" size="45" type="text"  required="required"  />
+            </td>
+          </tr>
+          <tr>
+            <td>Assistant Coach:</td>
+            <td>
+              <input name="Assistant Coach" size="45" type="text"  required="required"  />
+            </td>
+          </tr>
+          <tr>
+            <td>Aktif:</td>
+            <td>
+              <input checked="checked" name="Aktif" type="radio" value="Ja" /> Ja
+              <input name="Aktif" type="radio" value="Nein" /> Nein
+            </td>
+          </tr>
+          <tr>
+      <td>Position:</td>
+      <td>
+        <select select="selected" name="Position">
+          <option value="0">Bitte wählen</option>
+          <option value="c">Center</option>
+          <option value="g">Guard</option>
+          <option value="pf">Power Forward</option>
+          <option value="w" selected="selected">Wing</option>
+          <option value="sm">Small Forward</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+    <td>Rückennummer:</td>
+    <td>
+      <input maxlength="2" name="Rückennummer" size="14" type="text"  required="required"  />
+    </td>
+    </tr>
+    <tr>
+    <td>Geburtsdatum:</td>
+    <td>
+      <input maxlength="4" name="Jahr" placeholder="JJJJ" size="14"  required="required" >
+    </td>
+    </tr>
+    <tr>
+      <td>Favorit markieren:</td>
+      <td>
+        <input checked="checked" name="favorit" type="radio" value="Dummi 1" /> Dummi 1
+        <input name="favorit" type="radio" value="Dummi 2" /> Dummi 2
+        <input name="favorit" type="radio" value="Dummi 3" /> Dummi 3
+      </td>
+    </tr>
+
+
+
+
+
+
+
+
+              <tr>
+                <td></td>
+                <td>
+                  <input type="submit" value="Abschicken" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          </form>
+
+
+    		</section>
+
+
+
+    </body>
+    </html>
